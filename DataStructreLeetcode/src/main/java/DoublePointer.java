@@ -58,8 +58,33 @@ public class DoublePointer {
         }
     }
 
-
-
+    /**
+     * https://leetcode.com/problems/sum-of-square-numbers/description/
+     *
+     * Input: 5
+     * Output: True
+     * Explanation: 1 * 1 + 2 * 2 = 5
+     * 题目描述：判断一个数是否为两个数的平方和。
+     */
+    @Test
+    public void test2(){
+        int target = 41;
+        int i = 0;int j = (int)Math.sqrt(target);
+        while(i<j){
+            int sum = i*i +j*j;
+            if(sum == target){
+                System.out.println(i);
+                System.out.println(j);
+                break;
+            }
+            else if (sum < target){
+                i++;
+            }
+            else{
+                j--;
+            }
+        }
+    }
 
 
 
