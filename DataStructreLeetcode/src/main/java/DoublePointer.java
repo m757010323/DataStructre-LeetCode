@@ -69,7 +69,7 @@ public class DoublePointer {
     @Test
     public void test2(){
         int target = 41;
-        int i = 0;int j = (int)Math.sqrt(target);
+        int i = 0;int j = (int)Math.sqrt(target);//Math.sqrt函数是对该变量开平方
         while(i<j){
             int sum = i*i +j*j;
             if(sum == target){
